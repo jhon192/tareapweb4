@@ -1,13 +1,120 @@
-body {
+* {
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+table{
+  width: 100%;
+}
+
+table, th, td{
+  text-align: center;
+  border: 1px solid black;
+  background-color: #393E46;
+  color: white;
+  margin: 7px;
+}
+
+th, td{
+  padding: 10px;
+}
+
+th{
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: 20px;
+}
+
+td{
+  font-family: 'Uchen', serif;
+  font-size: 17px;
+}
+
+h4{
+  font-family: 'Otomanopee One', sans-serif;
+  font-size: 22px;
+}
+
+#root{
+  width: 100%;
+  height: 100%;
+}
+
+.root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #DA0037;
+}
+
+.container2{
+  width: 50%;
+  height: 100%;
+  background-color: #161616;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.inputContainer{
+    width: 400px;
+    height: 300px;
+    border: 12px solid black;
+    border-radius: 30px;
+    background-color: #EDEDED;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inputContainer input{
+    padding: 5px;
+    margin: 5px;
+    width: 300px;
+    border-radius: 14px;
+    padding: 6px 0 6px 10px;
+}
+
+.inputContainer div{
+    text-align: center;
+}
+
+.inputContainer div > input[type="submit"]{
+    width: 200px;
+}
+
+.inputSearch{
+  margin: 10px;
+}
+
+.inputSearch div{
+  display: inline;
+}
+
+.inputSearch input{
+  margin-right: 10px;
+  height: 30px;
+}
+
+.inputSearch div > input[type="text"]{
+  padding-left: 10px;
+  width: 400px;
+}
+
+.inputSearch div > input[type="submit"]{
+  width: 200px;
 }
